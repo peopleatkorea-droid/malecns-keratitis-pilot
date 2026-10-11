@@ -1,0 +1,24 @@
+{
+  "synthetic_animation": {
+    "sha256": "9f566a80bf0422b56e8bb98eabc12e791391c4462559369b3b8965329f12a5ab",
+    "dataset": "MaleCNS v1.0",
+    "data_license": "CC BY 4.0",
+    "source": "https://male-cns.janelia.org/download/",
+    "stimulus": "Synthetic vertical edge; gray baseline and recovery",
+    "contains_clinical_images": false,
+    "frames": 60,
+    "simulation_bin_ms": 5,
+    "playback_frame_ms": 100,
+    "positions": "Official soma positions, X-Z projection",
+    "colors": "Blue input/tonic cells; yellow downstream cells",
+    "description": "Simulated spikes with simplified LIF dynamics; not biological recordings"
+  },
+  "aggregate_chart": {
+    "sha256": "bd16bc8dc6341c7522479180d9bb2c9f38b4d343fdde48e21420f4279709feeb",
+    "unit": "Visit-level OOF AUROC",
+    "patients": 111,
+    "visits": 277,
+    "images": 720
+  },
+  "public_protocol": "Redacted explanatory copy; the original byte-identical lock remains private"
+}

@@ -1,0 +1,150 @@
+{
+  "version": "1.0",
+  "locked_at": "2026-09-15T22:47:56.934403+00:00",
+  "study": "MaleCNS visual-circuit keratitis pilot",
+  "cohort": {
+    "patients": 111,
+    "visits": 277,
+    "images": 720,
+    "bacterial": 69,
+    "fungal": 42
+  },
+  "upstream_commit": "48cf341e99c17dc911fb09fdc8419d98b4d0ea86",
+  "preprocessing": {
+    "size": 128,
+    "padding_rgb": [
+      128,
+      128,
+      128
+    ],
+    "resize": "aspect-preserving Lanczos",
+    "luma": [
+      0.2126,
+      0.7152,
+      0.0722
+    ],
+    "retina": "L1-L3 connectivity-inferred hex map; each eye rescaled to full image; no label-dependent calibration"
+  },
+  "dynamics": {
+    "model": "upstream simplified LIF",
+    "synapse_scale": 0.275,
+    "step_ms": 0.1,
+    "delay_ms": 1.8,
+    "refractory_ms": 2.2,
+    "sensory_gain": 20,
+    "lamina_drive": 12,
+    "half_saturation": 0.2,
+    "invert": false,
+    "baseline_ms": 100,
+    "baseline_brightness": 0.5,
+    "presentation_ms": 100,
+    "integration_chunk_ms": 5,
+    "readout_bins_ms": [
+      [
+        0,
+        50
+      ],
+      [
+        50,
+        100
+      ]
+    ],
+    "state_reset_per_image": true
+  },
+  "readout": "log1p spike counts of all selected non-directly-driven visual neurons; no outcome-driven neuron selection",
+  "models": [
+    "A_text28",
+    "B_visual28",
+    "C_input28",
+    "D_hog28",
+    "E_real28",
+    "F_null00",
+    "F_null01",
+    "F_null02",
+    "F_null03",
+    "F_null04",
+    "F_null05",
+    "F_null06",
+    "F_null07",
+    "F_null08",
+    "F_null09",
+    "N_nuisance"
+  ],
+  "nulls": {
+    "count": 10,
+    "seeds": [
+      20260916,
+      20260917,
+      20260918,
+      20260919,
+      20260920,
+      20260921,
+      20260922,
+      20260923,
+      20260924,
+      20260925
+    ],
+    "method": "directed double-edge swaps within exact signed weight groups",
+    "attempted_sweeps": 5,
+    "preserve": [
+      "node identities",
+      "in/out degree",
+      "signed in/out strength",
+      "self edges",
+      "no duplicates"
+    ],
+    "not_preserved": [
+      "spatial distance",
+      "ROI mixing",
+      "dynamical activity"
+    ],
+    "activity_interpretation_gate": "Each null gray and checker readout total must be 0.1 to 10 times real, and at least 28 readout cells active; otherwise topology superiority is not interpretable; report every null"
+  },
+  "evaluation": {
+    "primary_unit": "visit: mean image features before train-fitted transformations",
+    "outer": "original five patient-disjoint folds",
+    "inner_folds": 4,
+    "inner_seeds": [
+      20260916,
+      20260917,
+      20260918
+    ],
+    "C": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "pca_dimensions": 28,
+    "pre_pca": "train-fitted StandardScaler; remove training-constant features only",
+    "post_pca": "no whitening",
+    "logistic": "class-balanced, max_iter 3000, tie smaller C",
+    "primary_comparisons": [
+      "E minus mean individual F AUROC",
+      "E minus C AUROC"
+    ],
+    "bootstrap": "5000 paired patient-cluster resamples of fixed OOF predictions, conditional intervals",
+    "supplementary": [
+      "AUPRC",
+      "Brier",
+      "first-recorded-visit AUROC",
+      "patient-mean AUROC",
+      "inverse visit-count weighted AUROC",
+      "calibration intercept and slope",
+      "runtime and failures"
+    ],
+    "inference": "exploratory; two positive 95% difference interval lower bounds are a pilot continuation rule, not confirmatory evidence",
+    "subsequent": "Image-level separately fitted analysis, spatially constrained nulls and MedSigLIP fusion require a separately locked extension; no claim of initial untreated diagnostic accuracy"
+  },
+  "limitations": [
+    "same previously analyzed single-center cohort",
+    "no physiological validation of input map or neuron dynamics",
+    "color discarded in circuit arms",
+    "same 28D does not equalize total computation or prior knowledge",
+    "paired bootstrap conditional on realized OOF predictions",
+    "first recorded visit not necessarily pretreatment"
+  ],
+  "gif": "actual recorded soma-associated spike counts from synthetic stimulus, fixed brightness scale, explicit simulation clock; no patient image in public illustration",
+  "public_copy_note": "Redacted explanatory copy; not the original byte-identical protocol lock. No private record or embedding hashes."
+}

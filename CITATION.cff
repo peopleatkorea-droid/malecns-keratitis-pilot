@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite it and acknowledge the upstream MaleCNS, Fly OCR, and DOOMFLY projects described in THIRD_PARTY_NOTICES.md."
+type: software
+title: "A small connectome keratitis experiment"
+authors:
+  - name: "TinyStar Labs"
+version: 0.1.0
+date-released: 2026-10-11
+repository-code: "https://github.com/peopleatkorea-droid/malecns-keratitis-pilot"
+url: "https://tinystarlabs.com/#malecns-project"
+license: MIT
+abstract: "An exploratory frozen MaleCNS visual circuit experiment with image encoding, rewired controls, and patient-grouped evaluation. The private clinical cohort and fitted diagnostic models are not distributed."

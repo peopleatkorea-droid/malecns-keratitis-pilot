@@ -1,0 +1,678 @@
+{
+  "protocol_sha256": "19b0c7e8332fc19af2f3a5ad3ff02c79d87b66933ca248db013251acb01cac39",
+  "units": {
+    "image": {
+      "rows": 720,
+      "patients": 111,
+      "positive_rows": 420,
+      "metrics": {
+        "A_text28": {
+          "auroc": 0.6927063492063492,
+          "ci95": [
+            0.6070810931926329,
+            0.7710890094311748
+          ],
+          "auprc": 0.7243011553647125,
+          "brier": 0.21922093027034886,
+          "inverse_patient_count_weighted_auroc": 0.6552685941651983,
+          "patient_mean_auroc": 0.6783988957902002,
+          "calibration_intercept": 0.33378635472436324,
+          "calibration_slope": 0.831697953632169,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.694692144373673
+        },
+        "B_visual28": {
+          "auroc": 0.6910555555555555,
+          "ci95": [
+            0.6043485284536447,
+            0.7691863016542653
+          ],
+          "auprc": 0.7318137758179768,
+          "brier": 0.22133193415098873,
+          "inverse_patient_count_weighted_auroc": 0.6496257055219996,
+          "patient_mean_auroc": 0.675983436853002,
+          "calibration_intercept": 0.33393663406289625,
+          "calibration_slope": 0.7515458373709004,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.7014331210191083
+        },
+        "C_input28": {
+          "auroc": 0.5267619047619048,
+          "ci95": [
+            0.4462111227465433,
+            0.6124774158204905
+          ],
+          "auprc": 0.6092076217610221,
+          "brier": 0.26861067707868086,
+          "inverse_patient_count_weighted_auroc": 0.52242470009543,
+          "patient_mean_auroc": 0.505175983436853,
+          "calibration_intercept": 0.33699355283521654,
+          "calibration_slope": 0.123048434371746,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.5286093418259024
+        },
+        "D_hog28": {
+          "auroc": 0.4552142857142857,
+          "ci95": [
+            0.37400511557942384,
+            0.5387658553979563
+          ],
+          "auprc": 0.5389849517673837,
+          "brier": 0.2773562331139299,
+          "inverse_patient_count_weighted_auroc": 0.45589764172848335,
+          "patient_mean_auroc": 0.4378881987577639,
+          "calibration_intercept": 0.3304120820528068,
+          "calibration_slope": -0.3422636778888295,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.44734607218683653
+        },
+        "E_real28": {
+          "auroc": 0.4756111111111111,
+          "ci95": [
+            0.39736505639581343,
+            0.5572634473640651
+          ],
+          "auprc": 0.5640317000079506,
+          "brier": 0.27626859209716503,
+          "inverse_patient_count_weighted_auroc": 0.49183366912829546,
+          "patient_mean_auroc": 0.47619047619047616,
+          "calibration_intercept": 0.32740199826438693,
+          "calibration_slope": -0.3215686686764261,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.4728768577494692
+        },
+        "F_null00": {
+          "auroc": 0.48849206349206353,
+          "ci95": [
+            0.4203750999103813,
+            0.5639133825933204
+          ],
+          "auprc": 0.5789360736446906,
+          "brier": 0.2693518560523283,
+          "inverse_patient_count_weighted_auroc": 0.5089115041237477,
+          "patient_mean_auroc": 0.5055210489993098,
+          "calibration_intercept": 0.3387260689033873,
+          "calibration_slope": -0.1500623752989494,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.48757961783439485
+        },
+        "F_null01": {
+          "auroc": 0.462015873015873,
+          "ci95": [
+            0.39204161962507145,
+            0.5336634159558951
+          ],
+          "auprc": 0.5636206098329446,
+          "brier": 0.26976699199176396,
+          "inverse_patient_count_weighted_auroc": 0.45274661779204395,
+          "patient_mean_auroc": 0.46721877156659763,
+          "calibration_intercept": 0.337473204512344,
+          "calibration_slope": -0.17447443003598112,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.47038216560509555
+        },
+        "F_null02": {
+          "auroc": 0.4454444444444445,
+          "ci95": [
+            0.37263824653101857,
+            0.5206625977093085
+          ],
+          "auprc": 0.5451646311505183,
+          "brier": 0.2744240284609946,
+          "inverse_patient_count_weighted_auroc": 0.4548697789547336,
+          "patient_mean_auroc": 0.4289164941338854,
+          "calibration_intercept": 0.3430308169321221,
+          "calibration_slope": -0.43212215535069765,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.44426751592356684
+        },
+        "F_null03": {
+          "auroc": 0.459515873015873,
+          "ci95": [
+            0.3934612362405837,
+            0.5320943432901084
+          ],
+          "auprc": 0.5607972875482452,
+          "brier": 0.26945262369392436,
+          "inverse_patient_count_weighted_auroc": 0.48062140545080495,
+          "patient_mean_auroc": 0.46721877156659763,
+          "calibration_intercept": 0.3330834412517082,
+          "calibration_slope": -0.4815290113689704,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.47680467091295115
+        },
+        "F_null04": {
+          "auroc": 0.4286746031746032,
+          "ci95": [
+            0.3580059446906968,
+            0.5068707045393276
+          ],
+          "auprc": 0.5305447822713147,
+          "brier": 0.274446019739973,
+          "inverse_patient_count_weighted_auroc": 0.4570391883010168,
+          "patient_mean_auroc": 0.427536231884058,
+          "calibration_intercept": 0.3384404992876165,
+          "calibration_slope": -0.7157606020560539,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.4282908704883227
+        },
+        "F_null05": {
+          "auroc": 0.4179761904761905,
+          "ci95": [
+            0.34996862117024397,
+            0.49202070810052195
+          ],
+          "auprc": 0.5257103366685494,
+          "brier": 0.2786886381337627,
+          "inverse_patient_count_weighted_auroc": 0.4446017216274696,
+          "patient_mean_auroc": 0.41787439613526567,
+          "calibration_intercept": 0.3296372571572444,
+          "calibration_slope": -0.33939465416196923,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.4120488322717622
+        },
+        "F_null06": {
+          "auroc": 0.46215873015873016,
+          "ci95": [
+            0.39910980735574597,
+            0.5291033322182447
+          ],
+          "auprc": 0.5496322086667185,
+          "brier": 0.2772833851673245,
+          "inverse_patient_count_weighted_auroc": 0.45904909048219716,
+          "patient_mean_auroc": 0.4537612146307798,
+          "calibration_intercept": 0.3494344698702574,
+          "calibration_slope": -0.2505434733393778,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.4708067940552017
+        },
+        "F_null07": {
+          "auroc": 0.45353174603174606,
+          "ci95": [
+            0.3738160802086826,
+            0.5395919778800045
+          ],
+          "auprc": 0.5493710301633167,
+          "brier": 0.2686840019345125,
+          "inverse_patient_count_weighted_auroc": 0.46073018829186607,
+          "patient_mean_auroc": 0.4530710835058661,
+          "calibration_intercept": 0.33645110923914395,
+          "calibration_slope": -0.5776316851558363,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.44925690021231424
+        },
+        "F_null08": {
+          "auroc": 0.4378571428571429,
+          "ci95": [
+            0.3716810966271221,
+            0.507617477243078
+          ],
+          "auprc": 0.533877260809006,
+          "brier": 0.2724037237536177,
+          "inverse_patient_count_weighted_auroc": 0.4550598920562034,
+          "patient_mean_auroc": 0.443064182194617,
+          "calibration_intercept": 0.3352109146815931,
+          "calibration_slope": -0.6396709405458949,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.43237791932059444
+        },
+        "F_null09": {
+          "auroc": 0.4670079365079366,
+          "ci95": [
+            0.39920697213709094,
+            0.5382490584714306
+          ],
+          "auprc": 0.5610366612930473,
+          "brier": 0.26751786987965254,
+          "inverse_patient_count_weighted_auroc": 0.44306356055417917,
+          "patient_mean_auroc": 0.4192546583850932,
+          "calibration_intercept": 0.3384443796940999,
+          "calibration_slope": -0.48156457731105734,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.4476645435244162
+        },
+        "N_nuisance": {
+          "auroc": 0.4329047619047619,
+          "ci95": [
+            0.3528729197531854,
+            0.507679680613453
+          ],
+          "auprc": 0.5393451900802366,
+          "brier": 0.26361016250635166,
+          "inverse_patient_count_weighted_auroc": 0.4249606024847551,
+          "patient_mean_auroc": 0.39855072463768115,
+          "calibration_intercept": 0.34981412661506095,
+          "calibration_slope": -0.7629150887162468,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.4557324840764332
+        },
+        "crop_E_real28": {
+          "auroc": 0.4613333333333334,
+          "ci95": [
+            0.37544122025897086,
+            0.5473019160224197
+          ],
+          "auprc": 0.5763800585038754,
+          "brier": 0.2806269980590508,
+          "inverse_patient_count_weighted_auroc": 0.47825295980708044,
+          "patient_mean_auroc": 0.4523809523809524,
+          "calibration_intercept": 0.33473693480455086,
+          "calibration_slope": -0.21583864063094058,
+          "calibration_optimizer_success": true,
+          "image_probability_mean_per_visit_auroc": 0.4862526539278131
+        }
+      },
+      "comparisons": {
+        "E_minus_mean_F": {
+          "delta": 0.023343650793650694,
+          "ci95": [
+            -0.023603928905009734,
+            0.06800580026543891
+          ]
+        },
+        "E_minus_C": {
+          "delta": -0.05115079365079367,
+          "ci95": [
+            -0.1134426740443597,
+            0.00988224841836102
+          ]
+        },
+        "whole_E_minus_crop_E": {
+          "delta": 0.014277777777777723,
+          "ci95": [
+            -0.09812034496999056,
+            0.12972247334604908
+          ]
+        }
+      },
+      "null_mean_auroc": 0.4522674603174604,
+      "null_range": [
+        0.4179761904761905,
+        0.48849206349206353
+      ],
+      "real_beats_null_count": 9,
+      "valid_bootstrap_replicates": 5000
+    },
+    "visit": {
+      "rows": 277,
+      "patients": 111,
+      "positive_rows": 157,
+      "metrics": {
+        "A_text28": {
+          "auroc": 0.692515923566879,
+          "ci95": [
+            0.5979219026273053,
+            0.7798742862559971
+          ],
+          "auprc": 0.7162869412253057,
+          "brier": 0.2170311306295425,
+          "inverse_patient_count_weighted_auroc": 0.6672530789508012,
+          "patient_mean_auroc": 0.6766735679779158,
+          "calibration_intercept": 0.27766744415538924,
+          "calibration_slope": 0.9188764353952902,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.6238785369220152
+        },
+        "B_visual28": {
+          "auroc": 0.7012208067940551,
+          "ci95": [
+            0.6065864082927207,
+            0.7852318990073265
+          ],
+          "auprc": 0.7544898173476711,
+          "brier": 0.21669622681603287,
+          "inverse_patient_count_weighted_auroc": 0.6643463837494201,
+          "patient_mean_auroc": 0.6801242236024845,
+          "calibration_intercept": 0.29066837640015025,
+          "calibration_slope": 0.9158397721290404,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.6190476190476191
+        },
+        "C_input28": {
+          "auroc": 0.5556263269639066,
+          "ci95": [
+            0.4647179033528361,
+            0.6447258559497803
+          ],
+          "auprc": 0.6073197356925751,
+          "brier": 0.2716365390086081,
+          "inverse_patient_count_weighted_auroc": 0.5478316413668376,
+          "patient_mean_auroc": 0.5355417529330573,
+          "calibration_intercept": 0.26636676307721724,
+          "calibration_slope": 0.15524722728957435,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.5227743271221532
+        },
+        "D_hog28": {
+          "auroc": 0.47600849256900213,
+          "ci95": [
+            0.3802155665541017,
+            0.5779053001092475
+          ],
+          "auprc": 0.5604493888268651,
+          "brier": 0.2815982048666497,
+          "inverse_patient_count_weighted_auroc": 0.5035524657332795,
+          "patient_mean_auroc": 0.5037957211870255,
+          "calibration_intercept": 0.26213083459091363,
+          "calibration_slope": -0.16008620254938474,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.4696342305037957
+        },
+        "E_real28": {
+          "auroc": 0.46231422505307856,
+          "ci95": [
+            0.3832292469183359,
+            0.5444573921147121
+          ],
+          "auprc": 0.5378571793800466,
+          "brier": 0.2803213825222159,
+          "inverse_patient_count_weighted_auroc": 0.4630185585189029,
+          "patient_mean_auroc": 0.4641131815044858,
+          "calibration_intercept": 0.2753969933853908,
+          "calibration_slope": -0.363331359638241,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.49827467218771565
+        },
+        "F_null00": {
+          "auroc": 0.4888004246284502,
+          "ci95": [
+            0.40122927274585324,
+            0.583263904211958
+          ],
+          "auprc": 0.5568689485820578,
+          "brier": 0.289082799251964,
+          "inverse_patient_count_weighted_auroc": 0.49534306886273716,
+          "patient_mean_auroc": 0.4906832298136646,
+          "calibration_intercept": 0.2770967033135518,
+          "calibration_slope": -0.1268992301627715,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.5075914423740511
+        },
+        "F_null01": {
+          "auroc": 0.43874734607218674,
+          "ci95": [
+            0.3526264718827111,
+            0.5307632067869077
+          ],
+          "auprc": 0.563746911020321,
+          "brier": 0.2757994832228207,
+          "inverse_patient_count_weighted_auroc": 0.4724453073573154,
+          "patient_mean_auroc": 0.4810213940648723,
+          "calibration_intercept": 0.26745535153631184,
+          "calibration_slope": 0.01678568023662133,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.5
+        },
+        "F_null02": {
+          "auroc": 0.4547770700636943,
+          "ci95": [
+            0.3704787586249575,
+            0.5417779010430617
+          ],
+          "auprc": 0.5416269332989938,
+          "brier": 0.2868931161614866,
+          "inverse_patient_count_weighted_auroc": 0.4728013082947516,
+          "patient_mean_auroc": 0.46721877156659763,
+          "calibration_intercept": 0.2799116184047824,
+          "calibration_slope": -0.17734447014647875,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.45824706694271916
+        },
+        "F_null03": {
+          "auroc": 0.5363057324840764,
+          "ci95": [
+            0.45676349279425627,
+            0.6216125572891611
+          ],
+          "auprc": 0.5785558955073163,
+          "brier": 0.2658263722870647,
+          "inverse_patient_count_weighted_auroc": 0.5770506363380752,
+          "patient_mean_auroc": 0.5800552104899931,
+          "calibration_intercept": 0.2738976942284417,
+          "calibration_slope": -0.05580313706905083,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.5262249827467218
+        },
+        "F_null04": {
+          "auroc": 0.46157112526539273,
+          "ci95": [
+            0.382973935336169,
+            0.5417220159318621
+          ],
+          "auprc": 0.5538160405829373,
+          "brier": 0.27869358116982634,
+          "inverse_patient_count_weighted_auroc": 0.4769482876349675,
+          "patient_mean_auroc": 0.4723947550034507,
+          "calibration_intercept": 0.2809160121707168,
+          "calibration_slope": -0.2575468209917011,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.46790890269151136
+        },
+        "F_null05": {
+          "auroc": 0.43688959660297244,
+          "ci95": [
+            0.3494025315475152,
+            0.5229760085850673
+          ],
+          "auprc": 0.5044920198233116,
+          "brier": 0.2810999857371338,
+          "inverse_patient_count_weighted_auroc": 0.4282659509419341,
+          "patient_mean_auroc": 0.41545893719806765,
+          "calibration_intercept": 0.26214426924570805,
+          "calibration_slope": -0.3765923197114564,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.45169082125603865
+        },
+        "F_null06": {
+          "auroc": 0.4857749469214437,
+          "ci95": [
+            0.4061002356468825,
+            0.5686516501005136
+          ],
+          "auprc": 0.555101764901201,
+          "brier": 0.27856488623530384,
+          "inverse_patient_count_weighted_auroc": 0.47819847477369853,
+          "patient_mean_auroc": 0.4758454106280193,
+          "calibration_intercept": 0.29270046991185233,
+          "calibration_slope": -0.1776379037057399,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.47135955831608006
+        },
+        "F_null07": {
+          "auroc": 0.4518577494692144,
+          "ci95": [
+            0.37007834500423775,
+            0.532816158949097
+          ],
+          "auprc": 0.5328683287511919,
+          "brier": 0.2720447999628948,
+          "inverse_patient_count_weighted_auroc": 0.4446945256900392,
+          "patient_mean_auroc": 0.42581090407177363,
+          "calibration_intercept": 0.2755769649638287,
+          "calibration_slope": -0.24768761171815779,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.45445134575569357
+        },
+        "F_null08": {
+          "auroc": 0.43089171974522295,
+          "ci95": [
+            0.35623087630214856,
+            0.5085453781652572
+          ],
+          "auprc": 0.5273435568214917,
+          "brier": 0.27657968618487155,
+          "inverse_patient_count_weighted_auroc": 0.4613812506410845,
+          "patient_mean_auroc": 0.43995859213250516,
+          "calibration_intercept": 0.2698990180868454,
+          "calibration_slope": -0.04336523721628789,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.46307798481711526
+        },
+        "F_null09": {
+          "auroc": 0.45583864118895967,
+          "ci95": [
+            0.3855446367885662,
+            0.5301047686402012
+          ],
+          "auprc": 0.5275026408086083,
+          "brier": 0.2771962045620854,
+          "inverse_patient_count_weighted_auroc": 0.44483186560136156,
+          "patient_mean_auroc": 0.4354727398205659,
+          "calibration_intercept": 0.26864090857986245,
+          "calibration_slope": -0.01377838466252284,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.45962732919254656
+        },
+        "N_nuisance": {
+          "auroc": 0.4666666666666667,
+          "ci95": [
+            0.35919681193001646,
+            0.5661296401268787
+          ],
+          "auprc": 0.5525099058243942,
+          "brier": 0.2721251167306427,
+          "inverse_patient_count_weighted_auroc": 0.4148353038087336,
+          "patient_mean_auroc": 0.42063492063492064,
+          "calibration_intercept": 0.268687626629923,
+          "calibration_slope": -0.41252011071182015,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.37681159420289856
+        },
+        "crop_E_real28": {
+          "auroc": 0.47855626326963907,
+          "ci95": [
+            0.3852010648519562,
+            0.5647674374236874
+          ],
+          "auprc": 0.5838372455840001,
+          "brier": 0.28549257879332046,
+          "inverse_patient_count_weighted_auroc": 0.45087867069923643,
+          "patient_mean_auroc": 0.44306418219461696,
+          "calibration_intercept": 0.26853928789949755,
+          "calibration_slope": -0.08772603152743874,
+          "calibration_optimizer_success": true,
+          "first_recorded_visit_auroc": 0.4344375431331953
+        }
+      },
+      "comparisons": {
+        "E_minus_mean_F": {
+          "delta": -0.0018312101910828438,
+          "ci95": [
+            -0.06668589118575187,
+            0.06367141989722691
+          ]
+        },
+        "E_minus_C": {
+          "delta": -0.093312101910828,
+          "ci95": [
+            -0.18126069101109035,
+            -0.004169694024605277
+          ]
+        },
+        "whole_E_minus_crop_E": {
+          "delta": -0.016242038216560506,
+          "ci95": [
+            -0.12370086659740509,
+            0.09397944580795273
+          ]
+        }
+      },
+      "null_mean_auroc": 0.4641454352441614,
+      "null_range": [
+        0.43089171974522295,
+        0.5363057324840764
+      ],
+      "real_beats_null_count": 7,
+      "valid_bootstrap_replicates": 5000
+    }
+  },
+  "null_activity_gates_reused": [
+    {
+      "seed": 0,
+      "ratios": {
+        "gray": 1.2772766947919698,
+        "checker": 1.253493013972056
+      },
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "ratios": {
+        "gray": 1.3636892638929299,
+        "checker": 1.3689763330481894
+      },
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "ratios": {
+        "gray": 1.3124818155368054,
+        "checker": 1.3136583974907328
+      },
+      "passed": true
+    },
+    {
+      "seed": 3,
+      "ratios": {
+        "gray": 1.3607797497817864,
+        "checker": 1.3575705731394354
+      },
+      "passed": true
+    },
+    {
+      "seed": 4,
+      "ratios": {
+        "gray": 1.340122199592668,
+        "checker": 1.3233532934131738
+      },
+      "passed": true
+    },
+    {
+      "seed": 5,
+      "ratios": {
+        "gray": 1.3430317137038115,
+        "checker": 1.3330481893356145
+      },
+      "passed": true
+    },
+    {
+      "seed": 6,
+      "ratios": {
+        "gray": 1.3328484143148094,
+        "checker": 1.3216424294268605
+      },
+      "passed": true
+    },
+    {
+      "seed": 7,
+      "ratios": {
+        "gray": 1.338376491125982,
+        "checker": 1.337610493299116
+      },
+      "passed": true
+    },
+    {
+      "seed": 8,
+      "ratios": {
+        "gray": 1.4646494035496072,
+        "checker": 1.420302252637582
+      },
+      "passed": true
+    },
+    {
+      "seed": 9,
+      "ratios": {
+        "gray": 1.2711667151585686,
+        "checker": 1.2731679498146564
+      },
+      "passed": true
+    }
+  ],
+  "caveats": [
+    "Known prior crop visit results; exploratory same-cohort extension",
+    "Patient-cluster bootstrap conditional on fixed OOF predictions",
+    "Whole view changes field of view, lesion size at 128px, and masking simultaneously",
+    "Visit model is independently fitted, not averaged image classifier scores",
+    "Archived full MedSigLIP embeddings aligned to exact IDs and manifest; historical per-image byte hashes unavailable"
+  ]
+}
